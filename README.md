@@ -6,7 +6,7 @@ Crimson 5 Energy Cloud Management Simulator is a Streamlit-based capstone dashbo
 
 ```bash
 pip install -r requirements.txt
-streamlit run app.py
+streamlit run integrated_dashboard.py
 ```
 
 ## Dashboard Sections
