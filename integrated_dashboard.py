@@ -66,15 +66,6 @@ def main() -> None:
     )
 
     if menu == "Home":
-        with st.expander("Presenter talking points", expanded=False):
-            st.markdown(
-                """
-                - This dashboard presents Crimson 5 Energy’s cloud transformation as an integrated executive portfolio.
-                - It connects financial planning, ROI, governance, operations, AI value, adoption, market growth, and FinOps.
-                - The goal is not to create a production-grade calculator, but to support better executive decision-making through scenario-based simulation.
-                - Use the sidebar flow to move from business case -> operating model -> innovation scale -> cost governance.
-                """
-            )
         st.markdown(
             """
             <div style="
@@ -94,6 +85,15 @@ def main() -> None:
             """,
             unsafe_allow_html=True,
         )
+        with st.expander("Presenter talking points", expanded=False):
+            st.markdown(
+                """
+                - This dashboard presents Crimson 5 Energy’s cloud transformation as an integrated executive portfolio.
+                - It connects financial planning, ROI, governance, operations, AI value, adoption, market growth, and FinOps.
+                - The goal is not to create a production-grade calculator, but to support better executive decision-making through scenario-based simulation.
+                - Use the sidebar flow to move from business case -> operating model -> innovation scale -> cost governance.
+                """
+            )
 
         st.markdown("##### How to use this dashboard")
         section_card(
