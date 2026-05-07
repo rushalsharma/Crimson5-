@@ -23,6 +23,15 @@ import cloud_cost_panel_app
 from _shared import apply_streamlit_theme, kpi_row
 
 
+def render(key_prefix: str = "", *, use_sidebar: bool = True) -> None:
+    """Render the integrated dashboard from the root app.
+
+    The root app passes a key prefix and sidebar flag for consistency with other panel apps.
+    """
+    # The integrated dashboard currently always uses the sidebar menu layout.
+    main()
+
+
 def main() -> None:
     st.set_page_config(page_title="Crimson 5 Energy — Integrated Dashboard", layout="wide")
     apply_streamlit_theme()
